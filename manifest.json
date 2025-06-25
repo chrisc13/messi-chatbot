@@ -1,0 +1,16 @@
+{
+    "name": "Messi Chatbot",
+    "short_name": "MessiBot",
+    "start_url": ".",
+    "display": "standalone",
+    "icons": [
+      {
+        "src": "messi-icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "background_color": "#ffffff",
+    "theme_color": "#007aff"
+  }
+  
