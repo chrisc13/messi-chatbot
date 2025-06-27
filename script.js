@@ -390,3 +390,12 @@ userInput.addEventListener('focus', () => {
     chatbox.scrollTop = chatbox.scrollHeight;
   }, 300);
 });
+
+
+if (window.visualViewport) {
+  window.visualViewport.addEventListener('resize', () => {
+    const chatbox = document.getElementById('chatbox');
+    const vh = window.visualViewport.height;
+    chatbox.style.height = (vh - 100) + 'px'; // adjust as needed
+  });
+}
