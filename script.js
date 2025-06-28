@@ -99,7 +99,7 @@ async function sendMessage() {
         const lowerMsg = msg.toLowerCase();
        
           await sendBotMessage("Posiblemente está en la bolsa 😉");
-          await sendBotMessageGif('/messi-chatbot/scrapbook-image.jpg', 2000);
+          await sendBotMessageGif('/messi-chatbot/scrapbook-image123.jpg', 2000);
         
         conversationStep++;
         break;
