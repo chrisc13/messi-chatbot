@@ -27,7 +27,7 @@ html, body {
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
-  background-color: gray;
+  background-color: red;
 }
 
   .header {
@@ -337,6 +337,7 @@ html, body {
 
   .chatbox {
     max-width: 100%;
+    max-height: 30vh;
   }
 
   .msg.bot, .msg.user {
