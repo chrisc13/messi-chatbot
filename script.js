@@ -50,7 +50,7 @@ async function sendMessage() {
         } else if (lower.includes('no') || lower.includes('nop') || lower.includes('nunca')) {
           await sendBotMessage("Jaja, bueno, creo que mientes jeje");
         } else {
-          await sendBotMessage("¡Interesante! Contame más si querés.");
+          await sendBotMessage("¡Interesante! Yo tengo mucho respeto");
         }
       
         await sendBotMessage("Ahora te toca a vos... Preguntame lo que quieras 😏");
@@ -66,7 +66,7 @@ async function sendMessage() {
           await sendBotMessage("El asado, sin dudas. Aunque a veces extraño las milanesas de mi mamá 🍖😋");
         } else if (userQuestion.includes('ronaldo')) {
           await sendBotMessage("Ronaldo es un crack, pero somos distintos. Yo juego para el equipo 😉");
-        } else if (userQuestion.includes('equipo') || userQuestion.includes('barça')) {
+        } else if (userQuestion.includes('equipo') || userQuestion.includes('barca')) {
           await sendBotMessage("Barcelona siempre va a ser mi casa, pero en París también aprendí mucho.");
         } else {
           await sendBotMessage("Mmm buena pregunta... te diría que depende del día 😉");
