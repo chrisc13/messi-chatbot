@@ -392,10 +392,17 @@ userInput.addEventListener('focus', () => {
 });
 
 
-if (window.visualViewport) {
-  window.visualViewport.addEventListener('resize', () => {
-    const chatbox = document.getElementById('chatbox');
-    const vh = window.visualViewport.height;
-    chatbox.style.height = (vh - 100) + 'px'; // adjust as needed
-  });
-}
+window.addEventListener('resize', () => {
+  const chatbox = document.getElementById('chatbox');
+  const inputArea = document.querySelector('.input-area');
+  const header = document.querySelector('.header');
+
+  if (chatbox && inputArea && header) {
+    const viewportHeight = window.innerHeight;
+    const inputHeight = inputArea.offsetHeight;
+    const headerHeight = header.offsetHeight + 10; // +10 for caption
+
+    chatbox.style.height = `${viewportHeight - inputHeight - headerHeight}px`;
+    chatbox.scrollTop = chatbox.scrollHeight;
+  }
+});
