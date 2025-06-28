@@ -406,3 +406,15 @@ window.addEventListener('resize', () => {
     chatbox.scrollTop = chatbox.scrollHeight;
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (window.visualViewport) {
+    window.visualViewport.addEventListener('resize', () => {
+      const chatbox = document.querySelector('.chatbox');
+      if (chatbox) {
+        chatbox.scrollTop = chatbox.scrollHeight;
+      }
+    });
+  }
+});
+
